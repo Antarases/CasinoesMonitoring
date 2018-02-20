@@ -1,0 +1,58 @@
+@keyframes blinkingShadow {
+    0%{
+        background: rgba(0,0,0, 0.8);
+    }
+    100%{
+        background: rgba(0,0,0, 0.9);
+    }
+}
+
+.casino-table{
+    position: relative;
+    padding: 10px;
+    height: 250px;
+    background-size: cover !important;
+    margin: 15px 0;
+    font: 21px 'Titillium Web' !important;
+    color: #EFECEB;
+    text-shadow: 1px 1px #000;
+}
+
+.casino-table.warning{
+    animation-name: blinkingShadow;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.baccarat{
+    background: url('../../images/baccarat.jpg') no-repeat 50% 50%;
+}
+
+.blackjack{
+    background: url('../../images/blackjack.jpg') no-repeat 50% 50%;
+}
+
+.poker{
+    background: url('../../images/poker.jpg') no-repeat 50% 50%;
+}
+
+.roulette{
+    background: url('../../images/roulette.jpg') no-repeat 50% 50%;
+}
+
+.casino-table .type{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 10px 12px;
+    text-transform: capitalize;
+    background: rgba(0,0,0, 0.65);
+}
+
+.table-name{
+    margin-bottom: 5px;
+    font-size: 26px;
+}
