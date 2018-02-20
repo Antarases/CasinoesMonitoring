@@ -29,16 +29,7 @@ for(let i=0; i<data.length; i++){
     data[i] = generateTable(i);
 }
 
-/*--------------------------------------------------------------------------------------------*/
-
-// function deleteFirstHalf() {
-//     data = data.slice(49);
-//     // console.log(data);
-// }
-//
-// setTimeout(deleteFirstHalf, 5000);
-
-/*--------------------------------------------------------------------------------------------*/
+/*----------- Changing tables data ------------------------------------------------------------*/
 
 function changeTablesData(){
     for(let i=0; i<data.length; i++){
@@ -60,7 +51,6 @@ function changeTablesData(){
             }
         }
     }
-    console.log('changed');
 }
 
 setInterval(changeTablesData, 5000);

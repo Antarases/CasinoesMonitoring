@@ -25,14 +25,11 @@ class CasinoesMonitoringApp extends React.Component {
     render() {
         return (
             <Grid fluid componentClass="main" id="casinoes-container">
-                {/*{console.log(this.state.data)}*/}
-
                     {
                         this.state.data.map(tableData => (
                             <CasinoTable key={tableData.id} data={tableData} />
                         ))
                     }
-
             </Grid>
         );
     }
