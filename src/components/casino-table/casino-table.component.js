@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Col} from 'react-bootstrap';
 
 import './casino-table.component.css';
@@ -26,11 +27,11 @@ class CasinoTable extends React.Component{
 }
 
 CasinoTable.propTypes = {
-    type: React.PropTypes.string,
-    name: React.PropTypes.string,
-    warning: React.PropTypes.bool,
-    players: React.PropTypes.number,
-    maxPlayers: React.PropTypes.number
+    type: PropTypes.string,
+    name: PropTypes.string,
+    warning: PropTypes.bool,
+    players: PropTypes.number,
+    maxPlayers: PropTypes.number
 };
 
 export default CasinoTable;
